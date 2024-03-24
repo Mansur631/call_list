@@ -1,9 +1,7 @@
-import time
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
 
-import options
 from options import install_driver
 from options import open_browser
 
@@ -20,6 +18,7 @@ class PageElements:
 
     def by_xpath(self, xpath):
         wait = WebDriverWait(self.driver, 10)
+        self.driver.refresh()
         element = wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
         return element
 
@@ -31,8 +30,8 @@ class PageElements:
         element = wait.until(EC.presence_of_element_located((By.LINK_TEXT, text)))
         return element
 
-
-# page_elements = PageElements()
-# contact_first_name = page_elements.by_xpath("//div/div/table/tbody/tr[2]/td[2]/input")
-# contact_first_name.click()
-# contact_first_name.send_keys('Alex')
+    def by_selector(self, selector):
+        wait = WebDriverWait(self.driver, 10)
+        self.driver.refresh()
+        element = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, selector)))
+        return element

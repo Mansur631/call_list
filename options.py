@@ -1,6 +1,5 @@
-import time
-
 from selenium import webdriver
+from selenium.webdriver.chrome.webdriver import WebDriver
 
 
 def install_driver():
@@ -9,6 +8,7 @@ def install_driver():
     return driver
 
 
-def open_browser(install_driver):
+def open_browser(install_driver) -> WebDriver:
     """Открытие старницы"""
     install_driver.get('https://samples.gwtproject.org/samples/Showcase/Showcase.html#!CwCellList')
+    return install_driver
