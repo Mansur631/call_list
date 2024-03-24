@@ -12,4 +12,3 @@ def install_driver():
 def open_browser(install_driver):
     """Открытие старницы"""
     install_driver.get('https://samples.gwtproject.org/samples/Showcase/Showcase.html#!CwCellList')
-    time.sleep(5)
