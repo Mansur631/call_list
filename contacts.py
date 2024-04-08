@@ -3,14 +3,14 @@ from datetime import datetime, timedelta
 
 # список имен
 def get_random_names():
-    names = ['alice', 'bob', 'charlie', 'david', 'emma', 'frank', 'grace', 'henry', 'isabel', 'jack']
+    names = ['Alice', 'Bob', 'Charlie', 'David', 'Emma', 'Frank', 'Grace', 'Henry', 'Isabel', 'Jack']
     random_names = random.choice(names)
     return random_names
 
 
 # список фамилий
 def get_random_surname():
-    surnames = ['smith', 'johnson', 'williams', 'jones', 'brown', 'davis', 'miller', 'wilson', 'moore', 'taylor']
+    surnames = ['Smith', 'Johnson', 'Williams', 'Jones', 'Brown', 'Davis', 'Miller', 'Wilson', 'Moore', 'Taylor']
     random_surname = random.choice(surnames)
     return random_surname
 
