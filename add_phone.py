@@ -75,11 +75,15 @@ def count_contact_after():
     return int(all_contact.text.split(':')[-1].strip())
 
 
+count_before = count_contact_before()
+
 functions = [add_first_name, add_last_name, add_category, add_birthday, add_address, add_create_contact]
 
-for _ in range(10):
+for _ in range(5):
     for func in functions:
         func()
 
-# print(count_contact_before() - count_contact_after())
+
+count_after = count_contact_after()
+print("Число добавленных контактов:", count_after - count_before)
 # time.sleep(5)
