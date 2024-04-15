@@ -2,8 +2,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
-from options import install_driver
-from options import open_browser
+from pages.options import install_driver
+from pages.options import open_browser
 
 
 class PageElements:

@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.webdriver import WebDriver
+from utils.config import BASE_URL
 
 
 def install_driver():
@@ -10,5 +11,5 @@ def install_driver():
 
 def open_browser(install_driver) -> WebDriver:
     """Открытие старницы"""
-    install_driver.get('https://samples.gwtproject.org/samples/Showcase/Showcase.html#!CwCellList')
+    install_driver.get(BASE_URL)
     return install_driver

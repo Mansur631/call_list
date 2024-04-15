@@ -1,12 +1,10 @@
-import time
-
 from selenium.webdriver.common.keys import Keys
 
-from contacts import get_random_address
-from contacts import get_random_birtday
-from contacts import get_random_names
-from contacts import get_random_surname
-from find_elements import PageElements
+from utils.contacts import get_random_address
+from utils.contacts import get_random_birtday
+from utils.contacts import get_random_names
+from utils.contacts import get_random_surname
+from utils.find_elements import PageElements
 
 page_elements = PageElements()
 

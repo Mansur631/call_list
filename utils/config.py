@@ -1,0 +1,1 @@
+BASE_URL = "https://samples.gwtproject.org/samples/Showcase/Showcase.html#!CwCellList"
